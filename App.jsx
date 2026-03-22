@@ -77,14 +77,16 @@ return(
   
   <h2>Gönderiler</h2>
 
-  {gonderiler.map(g = (
-    <Gonderi key={g.id}
+  {gonderiler.map(g => (
+    <Gonderi
+    key={g.id}
     icerik={g.icerik}
     tarih={g.tarih}
-    begeni={g.begeni}/>
+    begeni={g.begeni}
+    />
   ))}
   </div>
-)
+);
  // returen foksiyonun dıında
 
  export default SosyalMedyaProfil;
